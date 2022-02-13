@@ -51,6 +51,20 @@ while running:
             elif event.key == 1073741902:
                 scale += 1
                 new_frame = True
+            elif event.key == 1073741906:
+                lat += 4 * float(eval(SCALE_TO_SPN))
+                new_frame = True
+            elif event.key == 1073741905:
+                lat -= 4 * float(eval(SCALE_TO_SPN))
+                new_frame = True
+            elif event.key == 1073741904:
+                long -= 4 * float(eval(SCALE_TO_SPN))
+                new_frame = True
+            elif event.key == 1073741903:
+                long += 4 * float(eval(SCALE_TO_SPN))
+                new_frame = True
+            long = (long + 180) % 360 - 180
+            lat = (lat + 90) % 180 - 90
             if scale < 1:
                 scale = 1
             elif scale > 6:
