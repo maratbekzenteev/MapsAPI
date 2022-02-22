@@ -128,16 +128,16 @@ while running:
                 scale += 1
                 new_frame = True
             elif event.key == 1073741906:
-                lat += 4 * float(eval(SCALE_TO_SPN))
+                lat += 2 * float(eval(SCALE_TO_SPN))
                 new_frame = True
             elif event.key == 1073741905:
-                lat -= 4 * float(eval(SCALE_TO_SPN))
+                lat -= 2 * float(eval(SCALE_TO_SPN))
                 new_frame = True
             elif event.key == 1073741904:
-                long -= 4 * float(eval(SCALE_TO_SPN))
+                long -= 2 * float(eval(SCALE_TO_SPN))
                 new_frame = True
             elif event.key == 1073741903:
-                long += 4 * float(eval(SCALE_TO_SPN))
+                long += 2 * float(eval(SCALE_TO_SPN))
                 new_frame = True
             long = (long + 180) % 360 - 180
             lat = (lat + 90) % 180 - 90
